@@ -3,12 +3,16 @@
 function get_usr {
         echo $USER
 }
+function get_host {
+        echo $HOSTNAME
+}
+
 function get_path {
         echo $PWD
 }
 
 
-PROMPT=" $(get_usr) $ "
+PROMPT=" $(get_usr)-$(get_host) $ "
 RPROMPT='$(get_path)'
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}✗%{$reset_color%}"

@@ -19,7 +19,7 @@
         {
           "foreground": "#ffffff",
           "style": "plain",
-          "template": " {{ .UserName  }} $ ",
+          "template": " {{ .UserName  }}@{{ .HostName }} $ ",
           "type": "text"
         }
       ],
