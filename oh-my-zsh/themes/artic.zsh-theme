@@ -8,7 +8,7 @@ function get_path {
 }
 
 
-PROMPT=" $(get_usr) $ "
+PROMPT=" $(get_usr) $ "
 RPROMPT='$(get_path)'
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}✗%{$reset_color%}"
