@@ -1,0 +1,61 @@
+# Window settings
+[window]
+dimensions = { columns = 100, lines = 30 }
+position = { x = 10, y = 10 }
+padding = { x = 5, y = 5 }
+decorations = "full"  # Options: "full", "none", "transparent"
+startup_mode = "Maximized"  # Options: "Windowed", "Maximized", "Fullscreen"
+dynamic_title = true
+
+# Font configuration
+[font]
+normal = { family = "0xProto Nerd Font", style = "Regular" }
+size = 14.0
+offset = { x = 0, y = 0 }
+
+# Colors (dracula theme example)
+[colors]
+[colors.primary]
+background = "0x282a36"
+foreground = "0xf8f8f2"
+
+[colors.cursor]
+text = "0x000000"
+cursor = "0xffffff"
+
+[colors.normal]
+black = "0x000000"
+red = "0xff5555"
+green = "0x50fa7b"
+yellow = "0xf1fa8c"
+blue = "0xbd93f9"
+magenta = "0xff79c6"
+cyan = "0x8be9fd"
+white = "0xbfbfbf"
+
+[colors.bright]
+black = "0x4d4d4d"
+red = "0xff6e67"
+green = "0x5af78e"
+yellow = "0xf4f99d"
+blue = "0xcaa9fa"
+magenta = "0xff92d0"
+cyan = "0x9aedfe"
+white = "0xe6e6e6"
+
+# Cursor settings
+[cursor]
+style = "Block"  # Options: "Block", "Underline", "Beam"
+
+# Shell configuration
+[shell]
+program = "powershell.exe"
+args = ["-NoLogo"]
+
+# Scrolling
+[scrolling]
+history = 10000
+multiplier = 3
+
+# Key bindings
+
