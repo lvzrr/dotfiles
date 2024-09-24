@@ -175,7 +175,6 @@ programs.hyprland = {
 	kitty
 	xwayland
 	kdePackages.sddm
-	thunar
 ];
 
 fonts.packages = with pkgs; [
