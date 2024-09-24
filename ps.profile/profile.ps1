@@ -1,6 +1,6 @@
-oh-my-posh init pwsh --config "C:\\Users\\luxor\\.config\\oh-my-posh\\night-eyes.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config ".config\\oh-my-posh\\night-eyes.omp.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
-$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\luxor\.config\komorebi'
+$Env:KOMOREBI_CONFIG_HOME = '.config\komorebi'
 $start = @("
       :::    :::     ::: :::    ::: :::       :::
      :+:    :+:     :+: :+:    :+: :+:       :+:
@@ -471,9 +471,6 @@ Set-Alias -Name "vi" -Value "nvim.exe"
 Set-Alias -Name "vim" -Value "nvim.exe"
 Set-Alias -Name "v" -Value "nvim.exe"
 
-$notes = "C:\Users\luxor\OneDrive - Universidad Politécnica de Madrid\Notes\Upm-1"
-$dev = "C:\Users\luxor\OneDrive - Universidad Politécnica de Madrid\Programs"
-$config = "C:\Users\luxor\.config\"
 function currentpath
 {
 
