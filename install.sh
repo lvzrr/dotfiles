@@ -1,18 +1,18 @@
+
 git clone https://github.com/lvzrr/dotfiles
-cp /nixos/configuration.nix /etc/nixos/configuration.nix
-sudo su 
-nixos-rebuild switch
-
 cd dotfiles
-rm -fr /home/lvx/.config/kitty/
-cp kitty /home/lvx/.config/
+sudo cp /nixos/configuration.nix /etc/nixos/configuration.nix 
+sudo nixos-rebuild switch
 
-rm -fr /home/lvx/.config/nvim/
-cp nvim /home/lvx/.config/
+sudo rm -fr /home/lvx/.config/kitty/
+sudo cp kitty /home/lvx/.config/ -r
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo rm -fr /home/lvx/.config/nvim/
+sudo cp nvim /home/lvx/.config/ -r
 
-cp oh-my-zsh/themes/artic.zsh-theme /home/lvx/.oh-my-zsh/themes/
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-rm /home/lvx/.zshrc
-cp /zsh/.zshrc /home/lvx/
+sudo cp oh-my-zsh/themes/artic.zsh-theme /home/lvx/.oh-my-zsh/themes/
+
+sudo rm /home/lvx/.zshrc
+sudo cp /zsh/.zshrc /home/lvx/
