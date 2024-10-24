@@ -1,6 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "blocks": [
+  "final_space": true,
+    "shell_integration": true,
+    "blocks": [
     {
       "alignment": "right",
       "segments": [
@@ -14,12 +16,12 @@
       "type": "prompt"
     },{
       "alignment": "left",
-      "newline": true,
+      "newline": false,
       "segments": [
         {
           "foreground": "#ffffff",
           "style": "plain",
-          "template": " {{ .UserName  }}@{{ .HostName }} $ ",
+          "template": " {{ .UserName  }}/{{ .HostName }} <#ff0000>$</> ",
           "type": "text"
         }
       ],

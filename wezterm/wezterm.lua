@@ -9,9 +9,9 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 -- config.color_scheme = "Colors (base16)"
 config.color_scheme = "Nancy (terminal.sexy)"
-config.font = wezterm.font("0xProto Nerd Font")
+config.font = wezterm.font("0xProto Nerd Font Mono")
 config.enable_tab_bar = false
-config.font_size = 15
+config.font_size = 12
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.68
 config.default_prog = { "C:\\Program Files (x86)\\PowerShell\\7\\pwsh.exe", "-NoProfileLoadTime", "-NoLogo" }
