@@ -12,3 +12,4 @@ opt.linebreak = true
 opt.wrap = true
 vim.opt.textwidth = 0
 vim.opt.fixendofline = false
+vim.opt.shell = "zsh"
