@@ -1,0 +1,128 @@
+{
+  "default_workspace_padding": 0,
+  "default_container_padding": 10,
+  "border_width": 25,
+  "border_offset": -1,
+    "global_work_area_offset":{
+        "top": 0,
+        "bottom": 0,
+        "left":0,
+        "right":0,
+    },
+  "minimum_window_width": 0,
+  "minimum_window_height": 0,
+  "resize_delta": 50,
+  "window_container_behaviour": "Create",
+  "cross_monitor_move_behaviour": "Swap",
+  "unmanaged_window_operation_behaviour": "Op",
+  "mouse_follows_focus": true,
+  "border": true,
+  "border_colours": {
+    "single": {
+      "r": 0,
+      "g": 120,
+      "b": 200,
+    },
+    "stack": {
+      "r": 0,
+      "g": 165,
+      "b": 66
+    },
+    "monocle": {
+      "r": 255,
+      "g": 51,
+      "b": 153
+    },
+    "unfocused": {
+      "r": 128,
+      "g": 128,
+      "b": 128
+    }
+  },
+  "border_style": "System",
+  "border_z_order": "Bottom",
+  "border_implementation": "Windows",
+  "transparency": false,
+  "transparency_alpha": 220,
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "II",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "III",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "IV",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "V",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "VI",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "VII",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+        {
+          "name": "VIII",
+          "layout": "BSP",
+          "layout_rules": {},
+          "apply_window_based_work_area_offset": true
+        },
+
+
+      ],
+      "window_based_work_area_offset_limit": 1
+    }
+  ],
+    "float_rules": [
+        {
+            "kind":"Exe",
+            "id":"PowerToys.PowerLauncher.exe"
+
+        }
+    ],
+
+  "animation": {
+    "enabled": true,
+    "fps" : 144,
+    "style" : "EaseInOutSine",
+    },
+    "stackbar": {
+        "height": 30,
+        "mode": "OnStack",
+        "tabs": {
+            "width": 150,
+            "focused_text": "#c203fc",
+        },
+    },
+  "window_hiding_behaviour": "Cloak",
+  "monitor_index_preferences": {},
+  "display_index_preferences": {}
+}

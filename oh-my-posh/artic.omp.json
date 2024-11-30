@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+    "shell_integration": true,
+    "transient_prompt":	{
+		"background":	"transparent",
+		"foreground":	"lightBlue",
+		"template":	"<b>{{ .UserName }} - Command_History <#05f7ff><f></></></> "
+	},
+    "blocks": [
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "template": "{{ .Path }}"
+        }
+      ],
+      "type": "prompt"
+    }, {
+      "alignment": "left",
+      "newline": false,
+        "background": "transparent",
+        "foreground": "#ffffff",
+      "segments": [
+        {
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": "<b>{{ .UserName  }}/{{ .HostName }} <#05f7ff><f></></></> ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
