@@ -1,0 +1,1 @@
+/home/lvx/.config/setter.sh
