@@ -107,3 +107,4 @@ source $ZSH/oh-my-zsh.sh
 # autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=$PATH:/home/lvx/.spicetify
+cd ~

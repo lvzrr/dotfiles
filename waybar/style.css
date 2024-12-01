@@ -1,11 +1,10 @@
 * {
     font-family: mac_font;
-    font-size: 15px;
-    padding: 2px;
+    font-size: 13px;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 1); /* Black background with slight transparency */
+    background-color: rgba(0, 0, 0, 0); /* Black background with slight transparency */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -30,19 +29,19 @@ button.urgent {
 
 /* Workspace Buttons */
 #workspaces button {
-    padding: 0 5px;
+    padding: 5px;
     color: #ffffff;
-    border-radius: 8px;
 }
 
 #workspaces button:hover {
     color: rgba(0, 0, 0, 0.9);
 }
 
-#workspaces button.focused {
+#workspaces button.active {
 }
 
-#workspaces button.urgent {
+#workspaces button.visible {
+    color: #ff0000;
 }
 
 /* Module Styling */
@@ -63,7 +62,17 @@ button.urgent {
 #scratchpad,
 #power-profiles-daemon,
 #custom-cava,
-#custom-endvr
+#custom-endvr,
+#pulseaudio,
+#workspaces,
+#window{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 10px;
+    border-color: #ffffff;
+    border-radius: 8px;
+    background-color: #000000;
+}
 
 #mpd {
     padding: 0 10px;
@@ -227,8 +236,10 @@ button.urgent {
 #scratchpad.empty {
 }
 #custom-endvr {
-    color: rgba(255,0,50,1);
+    color: #b405ff;
     padding-left: 20;
     font-size: 20;
 }
+
+
 

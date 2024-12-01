@@ -2,10 +2,12 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 41, // Waybar height (to be removed for auto height)
-    "width": 1800, // Waybar width
-    "spacing": 15, // Gaps between modules (4px)
+    "height": 20, // Waybar height (to be removed for auto height)
+    "width": 1900, // Waybar width
+    "spacing": 20, // Gaps between modules (4px)
     // Choose the order of the modules
+    "margin-top": 2,
+    "margin-bottom": 0,
     "modules-left": [
         "custom/endvr",
         "hyprland/window",
@@ -20,7 +22,6 @@
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
         "battery",
         "clock",
     ],
@@ -32,10 +33,10 @@
         "format-icons": {
             "urgent": "",
             "focused": "",
-            "default": ""
+            "default": "",
         },
         "persistent-workspaces" : {
-            "*" : 5,
+            "*" : 3,
         },
     },
     "hyprland/window": {
@@ -96,7 +97,7 @@
     },
     
     "custom/endvr" : {
-        "format": "  努力 ",
+        "format": " ",
     },
 
     "pulseaudio/slider": {
@@ -201,16 +202,4 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
-    "custom/power": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
-    }
 }
