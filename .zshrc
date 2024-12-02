@@ -104,7 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias s="sniff"
 alias d="doers"
-#
+alias l="sniff"
+alias ll="sniff -h"
+alias ls="sniff"
+alias la="sniff -h"
+alias lt="sniff -t"
+alias lth="sniff -t -h"
+
 # autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=$PATH:/home/lvx/.spicetify

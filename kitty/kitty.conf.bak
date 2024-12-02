@@ -1,7 +1,9 @@
 
 font_size 15.0
 
-background_opacity 0.95
+background_opacity 0.85
+
+enable_audio_bell no
 
 # BEGIN_KITTY_FONTS
 font_family      family="Liga SFMono Nerd Font"
@@ -11,6 +13,6 @@ bold_italic_font auto
 # END_KITTY_FONTS
 
 # BEGIN_KITTY_THEME
-# Base2Tone Mall Dark
+# citylights
 include current-theme.conf
 # END_KITTY_THEME
