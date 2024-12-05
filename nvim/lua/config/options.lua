@@ -13,3 +13,4 @@ opt.wrap = true
 vim.opt.textwidth = 0
 vim.opt.fixendofline = false
 vim.opt.shell = "zsh"
+vim.opt.encoding = "utf-8"
