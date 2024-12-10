@@ -1,13 +1,10 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
+    "layer": "bottom",
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
-    "width": 1900, // Waybar width
-    "spacing": 20, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "margin-top": 2,
-    "margin-bottom": 0,
+    "height": "30",
+    "width": 1920,
+    "spacing": 20,
     "modules-left": [
         "custom/endvr",
         "hyprland/window",
@@ -16,12 +13,11 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "mpd",
         "pulseaudio",
+        "disk",
+        "memory",
         "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
         "battery",
         "clock",
     ],
@@ -41,7 +37,7 @@
     },
     "hyprland/window": {
         "format": "{class}",
-        "icon": true,
+        "icon": false,
     },
     "keyboard-state": {
         "numlock": true,
@@ -106,16 +102,14 @@
         "orientation": "horizontal"
     },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
-        "format": "{usage}%  ",
+        "format": "{usage}%  ",
         "tooltip": false
     },
     "memory": {
@@ -135,18 +129,19 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
-            "warning": 30,
+            "good": 85,
+            "warning": 60,
             "critical": 15
         },
         "format": "{capacity}%  ",
         "format-full": "{capacity}%  ",
         "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󰂄",
+        "format-plugged": "",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-good": "", // An empty format will hide the module
+        "format-full": "",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 3,
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -172,24 +167,31 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}%  {icon}  |{format_source}",
-        "format-bluetooth": "{volume}%  {format_source}",
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% 󰥰 {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}%  ",
+        "format-source": "",
+        // {volume}% 
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
+            "headphone": "󰋋 ",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["▁▂", "▁▂▃▅", "▁▂▃▅▆"]
         },
         "on-click": "pavucontrol"
     },
+
+"disk": {
+	"interval": 30,
+	"format": "{percentage_free}% 󰋊",
+	"unit": "GB"
+	// 0.25 GB out of 2000.00 GB available. Alternatively 241.3MiB out of 1.9TiB available.
+},
+
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",

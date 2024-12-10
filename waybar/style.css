@@ -1,14 +1,14 @@
 * {
-    font-family: mac_font;
-    font-size: 13px;
+    font-family: "Liga SFMono Nerd Font";
+    font-size: 14px;
+    text-shadow: 0px 0px 5px black;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0); /* Black background with slight transparency */
+    background-color: rgba(1, 1, 1, 0.8); /* Black background with slight transparency */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
-    border-radius: 8px;
 }
 
 window#waybar.hidden {
@@ -29,7 +29,6 @@ button.urgent {
 
 /* Workspace Buttons */
 #workspaces button {
-    padding: 5px;
     color: #ffffff;
 }
 
@@ -41,7 +40,8 @@ button.urgent {
 }
 
 #workspaces button.visible {
-    color: #ff0000;
+    color: #b405ff;
+    font-weight: bold;
 }
 
 /* Module Styling */
@@ -66,21 +66,21 @@ button.urgent {
 #pulseaudio,
 #workspaces,
 #window{
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 10px;
-    border-color: #ffffff;
-    border-radius: 8px;
-    background-color: #000000;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    /*border: 10px;*/
+    /*border-color: #ffffff;*/
+    /*border-radius: 8px;*/
+    /*background-color: #000000;*/
 }
 
 #mpd {
-    padding: 0 10px;
-    color: #ffffff;
-    border-radius: 8px;
 }
-
-#clock, #mode {
+#window{
+    font-weight: bold;
+}
+#clock{
+    padding-right: 15px;
 }
 
 #battery {
@@ -119,26 +119,14 @@ button.urgent {
 
 
 #pulseaudio-slider slider {
-    min-height: 0px;
-    min-width: 0px;
-    opacity: 0;
-    background-image: none;
-    border: none;
-    box-shadow: none;
 }
 #pulseaudio-slider trough {
-    min-height: 10px;
-    min-width: 80px;
-    border-radius: 5px;
-    background-color: black;
 }
 #pulseaudio-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background-color: green;
 }
 
 #pulseaudio {
+    padding-left: 20px;
 }
 
 #pulseaudio.muted, #wireplumber.muted {
@@ -148,8 +136,6 @@ button.urgent {
 }
 
 #custom-media {
-    color: #2a5c45;
-    min-width: 100px;
 }
 
 #custom-media.custom-spotify {

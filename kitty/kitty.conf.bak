@@ -1,7 +1,7 @@
 
-font_size 15.0
+font_size 13.0
 
-background_opacity 0.85
+background_opacity 0.95
 
 enable_audio_bell no
 
@@ -13,6 +13,6 @@ bold_italic_font auto
 # END_KITTY_FONTS
 
 # BEGIN_KITTY_THEME
-# citylights
+# Duotone Dark
 include current-theme.conf
 # END_KITTY_THEME
