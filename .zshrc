@@ -110,7 +110,7 @@ alias ls="sniff"
 alias la="sniff -h"
 alias lt="sniff -t"
 alias lth="sniff -t -h"
-
+alias cat="bat"
 # autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=$PATH:/home/lvx/.spicetify

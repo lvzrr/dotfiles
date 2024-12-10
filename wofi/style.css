@@ -1,51 +1,57 @@
 window {
-margin: 0px;
-border: 1px solid #bd93f9;
-background-color: #282a36;
+    margin: 0px;
+    border: 0px solid rgba(189, 147, 249, 1); /* #bd93f9 */
+    background-color: rgba(40, 42, 54, 1); /* #282a36 */
+    border-radius: 10px;
 }
 
 #input {
-margin: 5px;
-border: none;
-color: #f8f8f2;
-background-color: #44475a;
+    padding: 10px;
+    border: none;
+    color: rgba(248, 248, 242, 1); /* #f8f8f2 */
+    background-color: rgba(68, 71, 90, 1); /* #44475a */
+    font: "Liga SFMono Nerd Font";
+    font-size: 20px;
 }
 
 #inner-box {
-margin: 5px;
-border: none;
-background-color: #282a36;
+    margin: 5px;
+    border: none;
+    background-color: rgba(40, 42, 54, 1); /* #282a36 */
 }
 
 #outer-box {
-margin: 5px;
-border: none;
-background-color: #282a36;
+    margin: 5px;
+    border: none;
+    background-color: rgba(40, 42, 54, 0.2); /* #282a36 */
 }
 
 #scroll {
-margin: 0px;
-border: none;
+    margin: 0px;
+    border: none;
 }
 
 #text {
-margin: 5px;
-border: none;
-color: #f8f8f2;
-} 
+    margin: 5px;
+    border: none;
+    color: rgba(248, 248, 242, 1); /* #f8f8f2 */
+    font: "Liga SFMono Nerd Font";
+    font-size: 15px;
+}
 
 #entry.activatable #text {
-color: #282a36;
+    color: rgba(40, 42, 54, 1); /* #282a36 */
 }
 
 #entry > * {
-color: #f8f8f2;
+    color: rgba(248, 248, 242, 1); /* #f8f8f2 */
 }
 
 #entry:selected {
-background-color: #44475a;
+    background-color: rgba(68, 71, 90, 0.2); /* #44475a */
 }
 
 #entry:selected #text {
-font-weight: bold;
+    font-weight: bold;
 }
+
