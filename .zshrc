@@ -110,8 +110,13 @@ alias ls="sniff"
 alias la="sniff -h"
 alias lt="sniff -t"
 alias lth="sniff -t -h"
+alias note="Note-Cli"
+alias notes="Note-Cli"
+alias Note="Note-Cli"
+alias Notes="Note-Cli"
 alias cat="bat"
+alias cd="__zoxide_z"
 # autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=$PATH:/home/lvx/.spicetify
-cd ~
+eval "$(zoxide init zsh)"

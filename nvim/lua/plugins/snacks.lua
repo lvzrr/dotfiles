@@ -4,23 +4,15 @@ return {
   lazy = false,
   opts = {
     dashboard = {
+      enabled = true,
       preset = {
-        header = [[
-                               
-██╗    ██╗   ██╗███████╗██████╗    ███╗   ██╗██╗   ██╗██╗███╗   ███╗
-██║    ██║   ██║╚══███╔╝██╔══██╗   ████╗  ██║██║   ██║██║████╗ ████║
-██║    ██║   ██║  ███╔╝ ██████╔╝   ██╔██╗ ██║██║   ██║██║██╔████╔██║
-██║    ╚██╗ ██╔╝ ███╔╝  ██╔══██╗   ██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║
-███████╗╚████╔╝ ███████╗██║  ██║██╗██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║
-╚══════╝ ╚═══╝  ╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
-                                                                    
-          ]],
+        header = [[I use Neovim (BTW)]],
       },
       sections = {
         { section = "header" },
-        { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
-        { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-        { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+        { section = "keys", gap = 0, padding = 0 },
+        -- { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        -- { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
         { section = "startup" },
         -- {
         --   section = "terminal",
@@ -33,9 +25,10 @@ return {
     },
 
     bigfile = { enabled = true },
-    notifier = { enabled = true },
+    notifier = { enabled = true, style = "minimal" },
     quickfile = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
+    indent = { enabled = false },
   },
 }

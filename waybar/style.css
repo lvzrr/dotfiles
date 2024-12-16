@@ -1,6 +1,6 @@
 * {
     font-family: "Liga SFMono Nerd Font";
-    font-size: 14px;
+    font-size: 16px;
     text-shadow: 0px 0px 5px black;
 }
 
@@ -226,6 +226,3 @@ button.urgent {
     padding-left: 20;
     font-size: 20;
 }
-
-
-
