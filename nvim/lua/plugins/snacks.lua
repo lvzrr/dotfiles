@@ -6,14 +6,13 @@ return {
     dashboard = {
       enabled = true,
       preset = {
-        header = [[I use Neovim (BTW)]],
+        header = [[I use Neovim, btw.]],
       },
       sections = {
         { section = "header" },
         { section = "keys", gap = 0, padding = 0 },
         -- { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
         -- { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-        { section = "startup" },
         -- {
         --   section = "terminal",
         --   cmd = "doers",
