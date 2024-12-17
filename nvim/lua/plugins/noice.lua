@@ -5,8 +5,14 @@ return {
     event = "VeryLazy",
     opts = {
       cmdline = {
-        enabled = true,
+        enabled = false,
         view = "cmdline",
+        format = {
+          cmdline = { pattern = ":", icon = ":", lang = "vim" },
+        },
+      },
+      messages = {
+        enabled = false,
       },
       popupmenu = {
         enabled = true,

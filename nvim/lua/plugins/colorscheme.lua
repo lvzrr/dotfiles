@@ -6,9 +6,9 @@ return {
   config = function()
     require("github-theme").setup({
       options = {
-        transparent = true,
+        transparent = false,
       },
     })
-    vim.cmd("colorscheme github_dark_high_contrast")
+    vim.cmd("colorscheme github_dark_dimmed")
   end,
 }

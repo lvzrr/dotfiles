@@ -7,7 +7,7 @@ return {
       fg = "#bbc2cf",
       yellow = "#ECBE7B",
       cyan = "#008080",
-      black = "#000000",
+      black = "#0f0f0f",
       darkblue = "#081633",
       green = "#98be65",
       orange = "#FF8800",
@@ -19,14 +19,14 @@ return {
 
     -- Customize the sections of lualine
     opts.sections.lualine_a = {
-      -- { "fileformat", separator = { right = "" } }
+      { "mode" },
     }
     opts.sections.lualine_b = {
       {
         "filename",
         path = 4,
         "diff",
-        separator = { right = "" },
+        separator = { left = "", right = "" },
       },
       { "branch", icon = "" },
     }
@@ -74,7 +74,7 @@ return {
           end
           return msg
         end,
-        separator = { left = "" },
+        separator = { left = "" },
       },
     }
     opts.sections.lualine_z = {
@@ -93,23 +93,24 @@ return {
     -- Customize colors for different modes
     local theme = {
       normal = {
-        a = { fg = colors.black, bg = colors.blue, gui = "bold" }, -- Command (normal mode) color
+        a = { fg = colors.white, bg = colors.grey, gui = "bold" }, -- Command (normal mode) color
         b = { fg = colors.white, bg = colors.grey, gui = "bold" },
-        c = { fg = colors.white, gui = "italic" },
-        x = { fg = colors.white },
+        c = { fg = colors.white, bg = colors.grey, gui = "italic" },
+        x = { fg = colors.white, bg = colors.grey },
       },
 
-      insert = { a = { fg = colors.black, bg = colors.violet } }, -- Insert mode color
-      visual = { a = { fg = colors.black, bg = colors.orange } }, -- Visual mode color
-      replace = { a = { fg = colors.black, bg = colors.cyan } }, -- Replace mode color (optional, if you need it)
-      command = { a = { fg = colors.black, bg = colors.red } },
+      insert = { a = { fg = colors.green, bg = colors.grey } }, -- Insert mode color
+      -- visual = { a = { fg = colors.black, bg = colors.black } }, -- Visual mode color
+      -- replace = { a = { fg = colors.black, bg = colors.black } }, -- Replace mode color (optional, if you need it)
+      --  command = { a = { fg = colors.black, bg = colors.black } },
       inactive = {
-        a = { fg = colors.white, bg = colors.black },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white },
+        a = { fg = colors.white, bg = colors.grey },
+        b = { fg = colors.white, bg = colors.grey },
+        c = { fg = colors.white, bg = colors.grey },
       },
     }
     -- Set the theme
     opts.options.theme = theme
+    opts.options.section_separators = { "", "" }
   end,
 }
