@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias s="sniff"
 alias d="doers"
 alias l="sniff"
@@ -116,7 +117,11 @@ alias Note="Note-Cli"
 alias Notes="Note-Cli"
 alias cat="bat"
 alias cd="__zoxide_z"
-# autosuggestions
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=$PATH:/home/lvx/.spicetify
+
 eval "$(zoxide init zsh)"
+
+bindkey -v 
+export KEYTIMEOUT=1

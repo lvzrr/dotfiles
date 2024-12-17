@@ -10,3 +10,6 @@ vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", { noremap = tr
 
 -- Key mapping to disable Copilot
 vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", { noremap = true, silent = true })
+
+-- Open Copilot chat
+vim.api.nvim_set_keymap("n", "<leader>co", ":CopilotChatOpen<CR>", { noremap = true, silent = true })
