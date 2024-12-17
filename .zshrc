@@ -123,5 +123,3 @@ export PATH=$PATH:/home/lvx/.spicetify
 
 eval "$(zoxide init zsh)"
 
-bindkey -v 
-export KEYTIMEOUT=1
