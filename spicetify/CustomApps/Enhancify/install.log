@@ -1,8 +1,0 @@
-[19:33:49 2024-11-27] FETCHING Version 2.38.5
-[19:33:49 2024-11-27] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.38.5/spicetify-2.38.5-linux-amd64.tar.gz
-[19:33:53 2024-11-27] EXTRACTING /home/lvx/.spicetify/spicetify.tar.gz
-[19:33:53 2024-11-27] SETTING EXECUTABLE PERMISSIONS TO /home/lvx/.spicetify/spicetify
-[19:33:53 2024-11-27] REMOVING /home/lvx/.spicetify/spicetify.tar.gz
-[19:33:53 2024-11-27] spicetify path already set in /home/lvx/.zshrc, continuing...
-[19:33:53 2024-11-27] spicetify v2.38.5 was installed successfully to /home/lvx/.spicetify
-[19:33:53 2024-11-27] Run 'spicetify --help' to get started
