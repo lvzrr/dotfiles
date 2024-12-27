@@ -115,11 +115,15 @@ alias note="Note-Cli"
 alias notes="Note-Cli"
 alias Note="Note-Cli"
 alias Notes="Note-Cli"
+alias key="~/dev/KeyWatcher/run.sh"
+alias clearf="~/dev/Clearf/run.sh"
 alias cat="bat"
-alias cd="__zoxide_z"
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+alias q="exit"
 export PATH=$PATH:/home/lvx/.spicetify
+export EDITOR=nvim
+
 
 eval "$(zoxide init zsh)"
+
+set -o vi
 
