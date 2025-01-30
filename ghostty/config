@@ -1,9 +1,11 @@
 font-family = Liga SFMono Nerd Font
-font-size = 13
+font-size = 11
 title =ghostty
 window-decoration = false
 clipboard-write= allow
 theme = Apple System Colors
-background-opacity = 0.9
+background-opacity = 1
 x11-instance-name = ghostty
 class =Ghostty.term
+window-padding-x = 0,0
+window-padding-y = 0,0

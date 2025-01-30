@@ -93,20 +93,20 @@ return {
         -- Customize colors for different modes
         local theme = {
             normal = {
-                a = { fg = colors.white, bg = colors.grey, gui = "bold" }, -- Command (normal mode) color
-                b = { fg = colors.white, bg = colors.grey, gui = "bold" },
-                c = { fg = colors.white, bg = colors.grey, gui = "italic" },
-                x = { fg = colors.white, bg = colors.grey },
+                a = { fg = colors.white, bg = colors.black, gui = "bold" }, -- Command (normal mode) color
+                b = { fg = colors.white, bg = colors.black, gui = "bold" },
+                c = { fg = colors.white, bg = colors.black, gui = "italic" },
+                x = { fg = colors.white, bg = colors.black },
             },
 
-            insert = { a = { fg = colors.green, bg = colors.grey } }, -- Insert mode color
+            insert = { a = { fg = colors.green, bg = colors.black } }, -- Insert mode color
             -- visual = { a = { fg = colors.black, bg = colors.black } }, -- Visual mode color
             -- replace = { a = { fg = colors.black, bg = colors.black } }, -- Replace mode color (optional, if you need it)
             --  command = { a = { fg = colors.black, bg = colors.black } },
             inactive = {
-                a = { fg = colors.white, bg = colors.grey },
-                b = { fg = colors.white, bg = colors.grey },
-                c = { fg = colors.white, bg = colors.grey },
+                a = { fg = colors.white, bg = colors.black },
+                b = { fg = colors.white, bg = colors.black },
+                c = { fg = colors.white, bg = colors.black },
             },
         }
         -- Set the theme

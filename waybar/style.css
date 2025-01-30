@@ -44,6 +44,11 @@ button.urgent {
     font-weight: bold;
 }
 
+#taskbar button.active {
+    background-color: #b405ff;
+    
+}
+
 /* Module Styling */
 #clock,
 #battery,

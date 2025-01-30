@@ -117,7 +117,6 @@ alias Note="Note-Cli"
 alias Notes="Note-Cli"
 alias key="~/dev/KeyWatcher/run.sh"
 alias clearf="~/dev/Clearf/run.sh"
-alias cat="bat"
 alias q="exit"
 export PATH=$PATH:/home/lvx/.spicetify
 export EDITOR=nvim
