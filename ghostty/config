@@ -9,3 +9,4 @@ x11-instance-name = ghostty
 class =Ghostty.term
 window-padding-x = 0,0
 window-padding-y = 0,0
+mouse-hide-while-typing = true

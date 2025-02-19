@@ -1,0 +1,7 @@
+set default-bg          "#1E1E1E"
+set statusbar-bg        "#1E1E1E"
+set statusbar-fg        "#ffffff"   # Use white for statusbar text, if desired
+set recolor             true
+set recolor-lightcolor  "#1E1E1E"   # This replaces the PDF’s original white (light areas)
+set recolor-darkcolor   "#ffffff"   # This replaces the PDF’s original black (dark areas)
+set recolor-keephue     true

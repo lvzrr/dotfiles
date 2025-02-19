@@ -7,7 +7,6 @@
     "spacing": 20,
     "modules-left": [
         "custom/endvr",
-        "wlr/taskbar",
     ],
     // "modules-center": [
     //     "hyprland/workspaces"
@@ -158,13 +157,12 @@
     },
 
 "wlr/taskbar": {
-    "format": "{icon}",
+    "format": "{name}",
     "icon-size": 25,
-    "icon-theme": "Numix-Circle",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
-    "active-first": false,
+    "active-first": true,
     "sort-app-by-appid": true,
     // "ignore-list": [
     //    "Alacritty"
@@ -188,12 +186,10 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": "{volume}%  {format_source}",
+        "format": "{volume} {icon}",
+        "format-bluetooth": "{volume} {icon}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "",
-        // {volume}% 
         "format-source-muted": "",
         "format-icons": {
             "headphone": "󰋋 ",
@@ -201,7 +197,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["▂▁", "▅▃▂▁", "▆▅▃▂▁"]
+            "default": ["󰕿", "󰖀", "󰕾 "]
         },
         "on-click": "pavucontrol"
     },

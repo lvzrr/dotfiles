@@ -10,5 +10,7 @@ return {
             },
         })
         vim.cmd("colorscheme github_dark_dimmed")
+        vim.api.nvim_set_hl(0, "SnacksDashboardHeader", { fg = "#b405ff" })
+        vim.api.nvim_set_hl(0, "SnacksDashboardKey", { fg = "#b405ff" })
     end,
 }

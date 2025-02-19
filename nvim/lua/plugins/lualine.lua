@@ -52,7 +52,7 @@ return {
             },
         }
         opts.sections.lualine_x = {
-            "encoding",
+            "copilot",
             "location",
             "progress",
             "filetype",
@@ -77,6 +77,7 @@ return {
                 separator = { left = "" },
             },
         }
+
         opts.sections.lualine_z = {
             --{
             --   function()

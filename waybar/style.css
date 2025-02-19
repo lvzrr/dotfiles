@@ -41,12 +41,16 @@ button.urgent {
 
 #workspaces button.visible {
     color: #b405ff;
-    font-weight: bold;
 }
 
 #taskbar button.active {
-    background-color: #b405ff;
-    
+    color: #ffffff;    
+    font-weight: bold;
+}
+
+#taskbar button {
+    font-size: 5px
+
 }
 
 /* Module Styling */
