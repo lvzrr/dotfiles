@@ -126,3 +126,4 @@ eval "$(zoxide init zsh)"
 
 set -o vi
 
+alias mini='~/mini-moulinette/mini-moul.sh'
