@@ -126,4 +126,9 @@ eval "$(zoxide init zsh)"
 
 set -o vi
 
+export MOUL='/home/lvx/.moul/'
+export MOUL_TEST_BIN='/home/lvx/.moul/.test_cache'
+export MOUL_BIN='/home/lvx/.moul/.bin'
+alias moul='/home/lvx/.moul/moul-bin'
+export MOUL_TRACE='/home/lvx/.moul/trace.moul'
 alias mini='~/mini-moulinette/mini-moul.sh'
